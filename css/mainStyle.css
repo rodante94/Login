@@ -1,0 +1,48 @@
+.balsamic-font {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.itim-font {
+    font-family: 'Itim', cursive;
+}
+
+body.login-body {
+    text-align: center;
+    background-color: #1A5B92;
+    margin: 0;
+}
+
+.top-div {
+    width: 100%;
+    margin-top: 18%;
+}
+
+.welcome-message {
+    color: white;
+}
+
+.middle-div {
+    width: 100%;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+.bottom-cloud {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.botton-div {
+    width: 100%;
+}
+
+.mountain {
+    position: fixed;
+    bottom: 0;
+    left: 35%;
+}
