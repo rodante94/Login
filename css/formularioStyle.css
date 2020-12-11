@@ -1,0 +1,45 @@
+.layout-formulario {
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    font-size: xx-large;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    margin: 20px;
+    color: black;
+    background-color: white;
+}
+
+.label-formulario {
+    font-size: xx-large;
+    color: white;
+    position: fixed;
+    left: 20%;
+}
+
+.form-body {
+    background-color: #1A5B92;
+    margin-top: 5%;
+    position: fixed;
+    width: 100%;
+    height: 100;
+    text-align: center;
+    
+}
+
+.sendButton {
+    width: 50.8%;
+    height: 10%;
+    margin-top: 3%;
+    left: 25%;
+    font-size: large;
+    font-size: xx-large;
+    background-color: #0070E0;
+    border-color: #0070E0;
+    border-radius: 16px;
+    color: white;
+    position: fixed;
+}
+

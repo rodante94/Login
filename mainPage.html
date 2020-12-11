@@ -9,7 +9,7 @@
        <script>
 
         function modifyText() {
-            alert("I am an alert box!");
+            //alert("I am an alert box!");
             document.getElementById("topCloud").src = "images/sun.png"; 
             document.getElementById("topCloud").width = 200;
             document.getElementById("topCloud").height = 200;
@@ -20,11 +20,13 @@
             el.addEventListener("click", modifyText, false); 
         } 
         document.addEventListener("DOMContentLoaded", load, false);
+
+        
     </script>
     </head>
     <body class="login-body">
         <div>
-            <img id="topCloud" class="top-cloud" src="images/cloud.png" alt="cloud">
+            <img id="topCloud"  class="top-cloud" src="images/cloud.png" alt="cloud">
             <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
         </div>
         <div class="top-div">
@@ -41,6 +43,7 @@
         </div>
         
         <script src="./src/index.js" type="module"></script>
+
 
     </body>
 </html>

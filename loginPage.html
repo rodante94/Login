@@ -9,12 +9,21 @@
     </head>
     <body class="login-body">
         <div class="login-form">
-            <form action="" method="POST" enctype="text/plain">
-
-                <login-user isVisible="visible" displayName="hidden"></login-user>
-
+            <form action="" id="form-elemnt"  method="POST" enctype="text/plain">
+                <login-user id="elem" isVisible="visible" displayName="hidden"></login-user>
+                
             </form>
         </div>
         <script src="./src/index.js" type="module"></script>
+        <script>
+            var event = new Event('build');
+
+            // Escucha para el evento.
+            elem.addEventListener('build', function (e) { console.log("Hora de cells");}, false);
+
+            // Disparar event.
+            elem.dispatchEvent(event);
+                
+        </script>
     </body>
-</html>
+</html> 
