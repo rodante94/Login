@@ -21,20 +21,22 @@ class validarFormulario{
     }
     
 }
-function validar(Name, LastName, SecondLastName, Edad){
+
+var fnValidar = function validar(Name, LastName, SecondLastName, Edad){
     var name =  Name;
     var lastName = LastName;
     var secondLastName = SecondLastName;
     var edad = Edad;
     if (name == "" || lastName == "" || secondLastName == "" || edad == "")
     {
-        //alert("No deje campos vacíos");
         return false;
+        
     }
     else
     {
-        //alert("Correcto");
         return true;
+        
     }
     
 }
+exports.fnValidar = fnValidar;

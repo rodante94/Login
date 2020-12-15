@@ -4,7 +4,7 @@ var sinon = require("sinon");
 var assert = require('chai').assert;
 
 var expect = require('chai').expect;
-const app = require("../src/validar-formulario");
+var formulario = require('../src/validar-formulario');
 
 
 
@@ -32,20 +32,29 @@ describe('String', function () {
     });
  
     it('should be type string 2', function () {
-        var result = app.validar("Rodrigo","De la O","Tapia","26");
-        assert.equal(result,false);
+        var result = formulario.fnValidar("Rodrigo","De la O","Tapia","26");
+        assert.equal(result,true);
     });
  });
 
  describe('validar', function () {
    
     it('Test validate method', function () {
-        var spy = sinon.spy(validar);
+    //    var date = new Date();
+        var spy = sinon.spy();
+
+  //  spy(1, 2, date);
+
+//    spy.lastCall.lastArg === date;
+
         var Name = "Rodrigo",
         LastName = "De la O",
         SecondLastName = "Tapia",
         Edad = "26";
-        var res = validar(Name, LastName, SecondLastName, Edad);
+        spy(formulario.fnValidar(Name, LastName, SecondLastName, Edad));
+        
+        //var res = validar(Name, LastName, SecondLastName, Edad);
+        
         sinon.assert.calledOnce(spy);
     });
  
